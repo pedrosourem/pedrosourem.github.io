@@ -42,7 +42,7 @@
 		<!-- Nav -->
 		<nav id="nav">
 			<ul class="links">
-				<li class="active"><a href="index.html">Portfolio</a></li>
+				<li class="active"><a href="index.html" id="porttoggle">Portfolio</a></li>
 				<li><a href="resume.html" id="resumetoggle">Resume</a></li>
 			</ul>
 			<ul class="icons">
@@ -60,10 +60,6 @@
 
 
 		<!-- Main -->
-		<!--resume-->
-		<div id="resume">
-			This is where you will add your resume info.
-		</div>
 		<div id="main">
 
 			<!-- Posts -->
@@ -298,6 +294,14 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+	<script type="text/javascript">
+		function changeClass() {
+			var curr = document.getElementById("resumetoggle");
+			curr.classList.toggle("active");
+			var notCurr = document.getElementById("porttoggle")
+			notCurr.classList.toggle("active")
+		}
+	</script>
 </body>
 
 </html>
